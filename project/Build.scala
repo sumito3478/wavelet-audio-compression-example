@@ -15,9 +15,15 @@ object Build {
       "-target:jvm-1.7",
       "-deprecation",
       "-feature",
-      "-unchecked")).settings(scalariformSettings: _*)
+      "-unchecked"),
+    libraryDependencies ++= libs).settings(scalariformSettings: _*)
 
   lazy val scalariformSettings = SbtScalariform.scalariformSettings ++ Seq(
     SbtScalariform.ScalariformKeys.preferences := FormattingPreferences()
       .setPreference(DoubleIndentClassDeclaration, true))
+
+  lazy val libs = Seq(
+    "com.nativelibs4java" %% "scalaxy-debug" % "0.3-SNAPSHOST" % "provided",
+    "com.nativelibs4java" %% "scalaxy-loop" % "0.3-SNAPSHOST" % "provided"
+  )
 }
