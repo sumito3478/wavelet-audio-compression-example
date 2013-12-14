@@ -1,4 +1,4 @@
-id := "wavlet-audio-compression-example"
+name := "wavlet-audio-compression-example"
 
 organization := "info.sumito3478"
 
