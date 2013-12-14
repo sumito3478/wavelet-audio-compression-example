@@ -24,7 +24,7 @@ object Build extends Build {
       .setPreference(DoubleIndentClassDeclaration, true))
 
   lazy val libs = Seq(
-    "com.nativelibs4java" %% "scalaxy-debug" % "0.3-SNAPSHOST" % "provided",
-    "com.nativelibs4java" %% "scalaxy-loop" % "0.3-SNAPSHOST" % "provided"
+    "com.nativelibs4java" %% "scalaxy-debug" % "0.3-SNAPSHOT",
+    "com.nativelibs4java" %% "scalaxy-loops" % "0.3-SNAPSHOT"
   )
 }
