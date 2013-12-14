@@ -4,7 +4,7 @@ import Keys._
 import scalariform.formatter.preferences._
 import com.typesafe.sbt.SbtScalariform
 
-object Build {
+object Build extends Build {
   lazy val root = project.in(file(".")).settings(
     name := "wavlet-audio-compression-example",
     version := "0.0.1-SNAPSHOT",
