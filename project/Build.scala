@@ -16,6 +16,7 @@ object Build {
       "-deprecation",
       "-feature",
       "-unchecked"),
+    resolvers += Resolver.sonatypeRepo("snapshots"),
     libraryDependencies ++= libs).settings(scalariformSettings: _*)
 
   lazy val scalariformSettings = SbtScalariform.scalariformSettings ++ Seq(
