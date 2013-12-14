@@ -24,6 +24,7 @@ object Build extends Build {
       .setPreference(DoubleIndentClassDeclaration, true))
 
   lazy val libs = Seq(
+    "org.tukaani" % "xz" % "1.4",
     "com.nativelibs4java" %% "scalaxy-debug" % "0.3-SNAPSHOT",
     "com.nativelibs4java" %% "scalaxy-loops" % "0.3-SNAPSHOT"
   )
