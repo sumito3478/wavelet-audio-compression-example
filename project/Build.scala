@@ -16,7 +16,10 @@ object Build extends Build {
       "-deprecation",
       "-feature",
       "-unchecked"),
-    resolvers += Resolver.sonatypeRepo("snapshots"),
+    resolvers ++= Seq(
+      "Apache Snapshots" at "https://repository.apache.org/content/groups/snapshots",
+      Resolver.sonatypeRepo("snapshots")
+    ),
     libraryDependencies ++= libs).settings(scalariformSettings: _*)
 
   lazy val scalariformSettings = SbtScalariform.scalariformSettings ++ Seq(
